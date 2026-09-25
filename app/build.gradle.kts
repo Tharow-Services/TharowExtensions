@@ -6,15 +6,14 @@ plugins {
 android {
     namespace = "net.tharow.extensions"
     compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
+        version = release(37) {
         }
     }
 
     defaultConfig {
         applicationId = "net.tharow.extensions"
         minSdk = 28
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
 
@@ -67,4 +66,5 @@ dependencies {
     implementation(libs.okhttp.zstd)
     implementation(libs.jsoup)
     implementation(libs.injekt)
+    implementation(libs.rxjava)
 }
